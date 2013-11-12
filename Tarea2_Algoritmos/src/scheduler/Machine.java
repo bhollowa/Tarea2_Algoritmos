@@ -17,6 +17,14 @@ public class Machine {
 		return jobs.size();
 	}
 
+	public ArrayList<Job> getJobs() {
+		return jobs;
+	}
+
+	public String getName() {
+		return name;
+	}
+
 	public int getStress() {
 		int stress = 0;
 		
@@ -29,6 +37,16 @@ public class Machine {
 
 	public void add(Job job) {
 		jobs.add(job);
+	}
+	
+	public void add(JobArray jobArray) {
+		for (Job job : jobArray.getJobs()) {
+			this.add(job);
+		}
+	}
+
+	public void clean() {
+		jobs = new ArrayList<Job>(); 
 	}
 
 }

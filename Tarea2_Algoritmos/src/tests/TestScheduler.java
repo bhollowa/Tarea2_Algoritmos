@@ -29,13 +29,62 @@ public class TestScheduler {
 	}
 
 	@Test
-	public void addOffJobBasic() {
+	public void addOffJobBasicTree() {
 		Job steve = new Job(10);
 		jobs.add(steve);
 		
 		sched.addOffline(jobs);
 		assertTrue(sched.nbOfJobs() == 1);
 		assertTrue(sched.getMachines().get(0).amountOfJobs() == 1);
+		assertTrue(sched.getMachines().get(0).getStress() == 10);
+	}
+	
+	@Test
+	public void addOffTwoJobsTree() {
+		Job steve = new Job(10);
+		Job jennifer = new Job(5);
+
+		jobs.add(steve);
+		jobs.add(jennifer);
+		
+		sched.addOffline(jobs);
+				
+		assertTrue(sched.nbOfJobs() == 2);
+		assertTrue(sched.getMachines().get(0).amountOfJobs() == 1);
+		assertTrue(sched.getMachines().get(0).getStress() == 10);
+		assertTrue(sched.getMachines().get(1).amountOfJobs() == 1);
+		assertTrue(sched.getMachines().get(1).getStress() == 5);
+	}
+	
+	@Test
+	public void addOffOverflowJobsTree() {
+		Job steve = new Job(10);
+		Job jennifer = new Job(5);
+		Job reed = new Job(8);
+		Job christopher = new Job(3);
+		Job camille = new Job(15);
+		Job john = new Job(6);
+
+		jobs.add(steve);
+		jobs.add(jennifer);
+		jobs.add(reed);
+		jobs.add(christopher);
+		jobs.add(camille);
+		jobs.add(john);
+		
+		sched.addOffline(jobs);
+				
+		assertTrue(sched.nbOfJobs() == 6);
+		assertTrue(sched.getMachines().get(0).amountOfJobs() == 1);
+		assertTrue(sched.getMachines().get(0).getStress() == 10);
+		assertTrue(sched.getMachines().get(1).amountOfJobs() == 1);
+		assertTrue(sched.getMachines().get(1).getStress() == 8);
+		assertTrue(sched.getMachines().get(2).amountOfJobs() == 1);
+		assertTrue(sched.getMachines().get(2).getStress() == 15);
+		assertTrue(sched.getMachines().get(3).amountOfJobs() == 1);
+		assertTrue(sched.getMachines().get(3).getStress() == 6);
+		assertTrue(sched.getMachines().get(4).amountOfJobs() == 2);
+		assertTrue(sched.getMachines().get(4).getStress() == 8);
 	}
 	
 	@Test
@@ -53,6 +102,7 @@ public class TestScheduler {
 	public void addOnTwoJobs() {
 		Job steve = new Job(10);
 		Job jennifer = new Job(5);
+
 		jobs.add(steve);
 		jobs.add(jennifer);
 		
@@ -73,6 +123,7 @@ public class TestScheduler {
 		Job christopher = new Job(3);
 		Job camille = new Job(15);
 		Job john = new Job(6);
+
 		jobs.add(steve);
 		jobs.add(jennifer);
 		jobs.add(reed);
@@ -93,6 +144,11 @@ public class TestScheduler {
 		assertTrue(sched.getMachines().get(3).getStress() == 9);
 		assertTrue(sched.getMachines().get(4).amountOfJobs() == 1);
 		assertTrue(sched.getMachines().get(4).getStress() == 15);
-
+	}
+	
+	@Test
+	public void getMaxStress() {
+		this.addOnOverflowJobs();
+		assertTrue(sched.getMostStressedMachine().getStress() == 15);
 	}
 }
