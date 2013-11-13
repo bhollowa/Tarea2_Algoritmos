@@ -1,0 +1,231 @@
+--TENEMOS 3 MAQUINAS--
+
+--:--
+- El trabajo número: 1 tendrá duración: 1.
+- El trabajo número: 2 tendrá duración: 2.
+- El trabajo número: 3 tendrá duración: 4.
+- El trabajo número: 4 tendrá duración: 8.
+- El trabajo número: 5 tendrá duración: 16.
+- El trabajo número: 6 tendrá duración: 32.
+- El trabajo número: 7 tendrá duración: 64.
+- El trabajo número: 8 tendrá duración: 128.
+- El trabajo número: 9 tendrá duración: 256.
+- El trabajo número: 10 tendrá duración: 512.
+--:--
+
+-> Ahora insertaremos los 10 trabajos con el Algoritmo Optimo Offline
+-> Este algoritmo se puede demorar un poco... espere por favor
+
+--RESULTADOS DEL OPTIMO--
+Machine1 tiene 0 trabajos, y en total tiene stress: 0.
+Machine2 tiene 1 trabajos, y en total tiene stress: 512.
+Machine3 tiene 9 trabajos, y en total tiene stress: 511.
+
+-> Ahora compararemos la apróx del óptimo con el algoritmo online
+-> Para esto consideraremos permutaciones aleatorias de los trabajos ya mencionados
+
+-Intento número: 1
+Máquina más cargada offline-mente: 512
+Máquina más cargada online-mente: 512
+Cumplió la competitividad! :-)
+
+-Intento número: 2
+Máquina más cargada offline-mente: 512
+Máquina más cargada online-mente: 512
+Cumplió la competitividad! :-)
+
+-Intento número: 3
+Máquina más cargada offline-mente: 512
+Máquina más cargada online-mente: 516
+Cumplió la competitividad! :-)
+
+-Intento número: 4
+Máquina más cargada offline-mente: 512
+Máquina más cargada online-mente: 533
+Cumplió la competitividad! :-)
+
+-Intento número: 5
+Máquina más cargada offline-mente: 512
+Máquina más cargada online-mente: 514
+Cumplió la competitividad! :-)
+
+-Intento número: 6
+Máquina más cargada offline-mente: 512
+Máquina más cargada online-mente: 544
+Cumplió la competitividad! :-)
+
+-Intento número: 7
+Máquina más cargada offline-mente: 512
+Máquina más cargada online-mente: 512
+Cumplió la competitividad! :-)
+
+-Intento número: 8
+Máquina más cargada offline-mente: 512
+Máquina más cargada online-mente: 580
+Cumplió la competitividad! :-)
+
+-Intento número: 9
+Máquina más cargada offline-mente: 512
+Máquina más cargada online-mente: 528
+Cumplió la competitividad! :-)
+
+-Intento número: 10
+Máquina más cargada offline-mente: 512
+Máquina más cargada online-mente: 512
+Cumplió la competitividad! :-)
+
+-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-
+
+--TENEMOS 3 MAQUINAS--
+
+--:--
+- El trabajo número: 1 tendrá duración: 1.
+- El trabajo número: 2 tendrá duración: 1.
+- El trabajo número: 3 tendrá duración: 2.
+- El trabajo número: 4 tendrá duración: 3.
+- El trabajo número: 5 tendrá duración: 5.
+- El trabajo número: 6 tendrá duración: 8.
+- El trabajo número: 7 tendrá duración: 13.
+- El trabajo número: 8 tendrá duración: 21.
+- El trabajo número: 9 tendrá duración: 34.
+- El trabajo número: 10 tendrá duración: 55.
+--:--
+
+-> Ahora insertaremos los 10 trabajos con el Algoritmo Optimo Offline
+-> Este algoritmo se puede demorar un poco... espere por favor
+
+--RESULTADOS DEL OPTIMO--
+Machine1 tiene 1 trabajos, y en total tiene stress: 55.
+Machine2 tiene 1 trabajos, y en total tiene stress: 34.
+Machine3 tiene 8 trabajos, y en total tiene stress: 54.
+
+-> Ahora compararemos la apróx del óptimo con el algoritmo online
+-> Para esto consideraremos permutaciones aleatorias de los trabajos ya mencionados
+
+-Intento número: 1
+Máquina más cargada offline-mente: 55
+Máquina más cargada online-mente: 57
+Cumplió la competitividad! :-)
+
+-Intento número: 2
+Máquina más cargada offline-mente: 55
+Máquina más cargada online-mente: 66
+Cumplió la competitividad! :-)
+
+-Intento número: 3
+Máquina más cargada offline-mente: 55
+Máquina más cargada online-mente: 58
+Cumplió la competitividad! :-)
+
+-Intento número: 4
+Máquina más cargada offline-mente: 55
+Máquina más cargada online-mente: 55
+Cumplió la competitividad! :-)
+
+-Intento número: 5
+Máquina más cargada offline-mente: 55
+Máquina más cargada online-mente: 57
+Cumplió la competitividad! :-)
+
+-Intento número: 6
+Máquina más cargada offline-mente: 55
+Máquina más cargada online-mente: 81
+Cumplió la competitividad! :-)
+
+-Intento número: 7
+Máquina más cargada offline-mente: 55
+Máquina más cargada online-mente: 63
+Cumplió la competitividad! :-)
+
+-Intento número: 8
+Máquina más cargada offline-mente: 55
+Máquina más cargada online-mente: 73
+Cumplió la competitividad! :-)
+
+-Intento número: 9
+Máquina más cargada offline-mente: 55
+Máquina más cargada online-mente: 69
+Cumplió la competitividad! :-)
+
+-Intento número: 10
+Máquina más cargada offline-mente: 55
+Máquina más cargada online-mente: 60
+Cumplió la competitividad! :-)
+
+-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-:-
+
+--TENEMOS 3 MAQUINAS--
+
+--:--
+- El trabajo número: 1 tendrá duración: 10.
+- El trabajo número: 2 tendrá duración: 5.
+- El trabajo número: 3 tendrá duración: 10.
+- El trabajo número: 4 tendrá duración: 6.
+- El trabajo número: 5 tendrá duración: 3.
+- El trabajo número: 6 tendrá duración: 2.
+- El trabajo número: 7 tendrá duración: 1.
+- El trabajo número: 8 tendrá duración: 2.
+- El trabajo número: 9 tendrá duración: 4.
+- El trabajo número: 10 tendrá duración: 5.
+--:--
+
+-> Ahora insertaremos los 10 trabajos con el Algoritmo Optimo Offline
+-> Este algoritmo se puede demorar un poco... espere por favor
+
+--RESULTADOS DEL OPTIMO--
+Machine1 tiene 5 trabajos, y en total tiene stress: 16.
+Machine2 tiene 2 trabajos, y en total tiene stress: 16.
+Machine3 tiene 3 trabajos, y en total tiene stress: 16.
+
+-> Ahora compararemos la apróx del óptimo con el algoritmo online
+-> Para esto consideraremos permutaciones aleatorias de los trabajos ya mencionados
+
+-Intento número: 1
+Máquina más cargada offline-mente: 20
+Máquina más cargada online-mente: 20
+Cumplió la competitividad! :-)
+
+-Intento número: 2
+Máquina más cargada offline-mente: 20
+Máquina más cargada online-mente: 18
+Cumplió la competitividad! :-)
+
+-Intento número: 3
+Máquina más cargada offline-mente: 20
+Máquina más cargada online-mente: 17
+Cumplió la competitividad! :-)
+
+-Intento número: 4
+Máquina más cargada offline-mente: 20
+Máquina más cargada online-mente: 19
+Cumplió la competitividad! :-)
+
+-Intento número: 5
+Máquina más cargada offline-mente: 20
+Máquina más cargada online-mente: 19
+Cumplió la competitividad! :-)
+
+-Intento número: 6
+Máquina más cargada offline-mente: 20
+Máquina más cargada online-mente: 17
+Cumplió la competitividad! :-)
+
+-Intento número: 7
+Máquina más cargada offline-mente: 20
+Máquina más cargada online-mente: 17
+Cumplió la competitividad! :-)
+
+-Intento número: 8
+Máquina más cargada offline-mente: 20
+Máquina más cargada online-mente: 22
+Cumplió la competitividad! :-)
+
+-Intento número: 9
+Máquina más cargada offline-mente: 20
+Máquina más cargada online-mente: 20
+Cumplió la competitividad! :-)
+
+-Intento número: 10
+Máquina más cargada offline-mente: 20
+Máquina más cargada online-mente: 22
+Cumplió la competitividad! :-)
