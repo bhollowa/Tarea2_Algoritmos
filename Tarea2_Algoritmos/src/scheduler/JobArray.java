@@ -19,6 +19,18 @@ public class JobArray {
 		this.jobs = new ArrayList<Job>();
 		this.stress = 0;
 	}
+	
+	public JobArray(int [] jobsDur) {
+		super();
+		
+		this.jobs = new ArrayList<Job>();
+		this.stress = 0;
+		
+		for (int i = 0; i < jobsDur.length; i++) {
+			Job a = new Job(jobsDur[i]);
+			this.add(a);
+		}
+	}
 
 	public int getStress() {
 		return stress;

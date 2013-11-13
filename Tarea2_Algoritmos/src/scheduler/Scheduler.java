@@ -159,6 +159,16 @@ public class Scheduler {
 
 		nbOfJobs += jobs.size();
 	}
+	
+	public void addOnlineStep(ArrayList<JobArray> jobs) {		
+		for (JobArray jobArray : jobs) {
+			assert(jobArray.getJobs().size() == this.machines.size());
+			
+			
+		}
+		
+		nbOfJobs += jobs.size();
+	}
 
 	/** It returns the most "stressed" machine (the one which has the greater sum of duration of its jobs)*/
 	public Machine getMostStressedMachine() {
