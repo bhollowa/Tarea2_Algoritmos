@@ -162,9 +162,23 @@ public class Scheduler {
 	
 	public void addOnlineStep(ArrayList<JobArray> jobs) {		
 		for (JobArray jobArray : jobs) {
-			assert(jobArray.getJobs().size() == this.machines.size());
+			assert(jobArray.size() == this.machines.size());
 			
+			/*Hay que verificar si se puede llenar gaps*/
 			
+			for (int i = 0; i < this.machines.size(); i++) {
+				Job now = jobArray.getMin();
+				int machinDex = now.getMach();
+				
+				machines.get(machinDex).add(now);
+				
+				for (Machine mach : machines) {
+					if(machines.indexOf(mach) != machinDex)
+						mach.add(new NullJob(now.getDuration()));
+				}
+			}
+			
+			/*Tengo que mergiar los gaps*/
 		}
 		
 		nbOfJobs += jobs.size();

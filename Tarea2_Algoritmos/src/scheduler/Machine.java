@@ -36,9 +36,15 @@ public class Machine {
 	/** It returns the sum of the duration of all the jobs in the machines*/
 	public int getStress() {
 		int stress = 0;
+		int semistress = 0;
 		
 		for (Job job : jobs) {
-			stress += job.getDuration();
+			if(job.isNull()) {
+				semistress += job.getDuration();
+			} else {
+				stress += job.getDuration() + semistress;
+				semistress = 0;
+			}
 		}
 		
 		return stress;

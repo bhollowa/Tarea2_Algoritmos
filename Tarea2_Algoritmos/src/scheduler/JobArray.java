@@ -28,6 +28,7 @@ public class JobArray {
 		
 		for (int i = 0; i < jobsDur.length; i++) {
 			Job a = new Job(jobsDur[i]);
+			a.setMach(i);
 			this.add(a);
 		}
 	}
@@ -50,5 +51,24 @@ public class JobArray {
 		
 		this.setStress(this.getStress() + j.getDuration());
 		}
+
+	public int size() {
+		return jobs.size();
+	}
+
+	public Job getMin() {
+		Job min = new Job(stress);
+		
+		for (Job job : this.jobs) {
+			if (job.getDuration() < min.getDuration())
+				min = job;
+		}
+		Job ret = new Job(min.getDuration());
+		ret.setMach(min.getMach());
+		
+		min.setDuration(stress);
+
+		return ret;
+	}
 
 }

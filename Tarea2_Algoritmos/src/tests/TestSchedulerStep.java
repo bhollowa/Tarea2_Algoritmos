@@ -29,11 +29,12 @@ public class TestSchedulerStep {
 		
 		sched.addOnlineStep(jobs);
 		assertTrue(sched.nbOfJobs() == 1);
-		assertTrue(sched.getMachines().get(0).amountOfJobs() == 1);
+		
+		assertTrue(sched.getMachines().get(0).amountOfJobs() == 3);
 		assertTrue(sched.getMachines().get(0).getStress() == 1);
-		assertTrue(sched.getMachines().get(1).amountOfJobs() == 1);
+		assertTrue(sched.getMachines().get(1).amountOfJobs() == 3);
 		assertTrue(sched.getMachines().get(1).getStress() == 3);
-		assertTrue(sched.getMachines().get(2).amountOfJobs() == 1);
+		assertTrue(sched.getMachines().get(2).amountOfJobs() == 3);
 		assertTrue(sched.getMachines().get(2).getStress() == 6);
 	}
 }
